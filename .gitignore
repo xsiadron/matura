@@ -1,0 +1,2 @@
+# Ignoruj wszystkie pliki (wypakowane załączniki) .txt w katalogu python/
+informatyka/rozszerzenie/**/python/*.txt
