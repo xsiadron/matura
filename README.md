@@ -15,7 +15,9 @@ Repozytorium składa się z następujących folderów:
     -   Folder w formacie `dd_mm_rrrr_symbol`  
         _Przykład: `22.05.2024_MINP-R0-100-2405`_
         -   `arkusz.pdf`
+        -   `arkusz_odpowiedzi.pdf`
         -   `arkusz_rozwiazanie.pdf`
+        -   `zalaczniki.zip`
         -   Folder zawierający kod (np. `python`)
 -   **zasoby**
 
@@ -33,6 +35,17 @@ Repozytorium składa się z następujących folderów:
         -   `arkusz_rozwiazanie.pdf`
 -   **zasoby**
     -   Folder `wzory_matematyczne` zawierający pliki, np. `nazwa_kod.pdf`
+
+## Tworzenie commitów
+
+-   `feat`: Dodanie nowego arkusza  
+    _np. feat: dodano arkusz informatyka/rozszerzenie/2024-12-06 MMAP-P0-100-2412_
+
+-   `fix`: Poprawka lub optymalizacja  
+    _np. fix: poprawiono rozwiązanie w zadaniu 3 (informatyka/rozszerzenie/2024-12-06)_
+
+-   `style`: Zmiany w formatowaniu lub wyglądzie  
+    _np. style: poprawiono formatowanie arkusza matematyka/rozszerzenie/2024-12-06_
 
 ## Jak przyczynić się do projektu?
 
