@@ -15,6 +15,7 @@ Repozytorium składa się z następujących folderów:
     -   Folder w formacie `dd_mm_rrrr_symbol`  
         _Przykład: `22.05.2024_MINP-R0-100-2405`_
         -   `arkusz.pdf`
+        -   `arkusz.xopp` lub inny - jako postęp rozwiązywania
         -   `arkusz_odpowiedzi.pdf`
         -   `arkusz_rozwiazanie.pdf`
         -   `zalaczniki.zip`
@@ -27,18 +28,20 @@ Repozytorium składa się z następujących folderów:
     -   Folder w formacie `dd_mm_rrrr_symbol`  
         _Przykład: `08.05.2024_MMAP-P0-100-2405`_
         -   `arkusz.pdf`
+        -   `arkusz.xopp` lub inny - jako postęp rozwiązywania
         -   `arkusz_rozwiazanie.pdf`
 -   **rozszerzenie**
     -   Folder w formacie `dd_mm_rrrr_symbol`  
         _Przykład: `15.05.2024_MMAP-R0-100-2405`_
         -   `arkusz.pdf`
+        -   `arkusz.xopp` lub inny - jako postęp rozwiązywania
         -   `arkusz_rozwiazanie.pdf`
 -   **zasoby**
     -   Folder `wzory_matematyczne` zawierający pliki, np. `nazwa_kod.pdf`
 
 ## Tworzenie commitów
 
--   `feat`: Dodanie nowego arkusza  
+-   `feat`: Dodanie nowego arkusza/zadania/pliku
     _np. feat: dodano arkusz informatyka/rozszerzenie/2024-12-06 MMAP-P0-100-2412_
 
 -   `fix`: Poprawka lub optymalizacja  
