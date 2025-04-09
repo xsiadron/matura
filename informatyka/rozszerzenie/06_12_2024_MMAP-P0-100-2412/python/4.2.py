@@ -1,28 +1,24 @@
-strings = []
+prostokaty = []
 i = 0
-strings.append(0)
+prostokaty.append(0)
 
-with open("prostokaty_przyklad.txt", "r") as f:
+with open("prostokaty.txt", "r") as f:
     lines = f.readlines()
 
-    for prev_line, current_line in zip(lines, lines[1:]):
-        prev_line = prev_line.strip().split(" ")
-        current_line = current_line.strip().split(" ")
-        s1, h1 = list(map(int, prev_line))
-        s2, h2 = list(map(int, current_line))
+    najdluzszy_ciag = []
+    aktualny_ciag = []
 
-        if s1 >= s2 and h1 >= h2:
-            # strings[i] += 1
-            print(f"{s2} {h2}")
+    for i in range(len(lines)):
+        wysokosc, szerokosc = map(int, lines[i].strip().split())
+
+        if not aktualny_ciag or (aktualny_ciag[-1][0] >= wysokosc and aktualny_ciag[-1][1] >= szerokosc):
+            aktualny_ciag.append((wysokosc, szerokosc))
         else:
-            # strings.append(0)
-            print(f"{s2} {h2} s")
-            i += 1
+            if len(aktualny_ciag) > len(najdluzszy_ciag):
+                najdluzszy_ciag = aktualny_ciag[:]
+            aktualny_ciag = [(wysokosc, szerokosc)]
 
-print(strings)
-print(i)
-# prev_line =
-#     s, h = list(map(int, numbers))
-#     field = s * h
+    if len(aktualny_ciag) > len(najdluzszy_ciag):
+        najdluzszy_ciag = aktualny_ciag[:]
 
-#     if s <= s2 & h <= h2
+print(len(najdluzszy_ciag), najdluzszy_ciag[-1][0], najdluzszy_ciag[-1][1])
